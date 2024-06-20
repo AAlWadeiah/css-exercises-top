@@ -24,3 +24,67 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* My solution */
+
+/* reset for whole page */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  display: flex;
+  /* border: 2px solid; */
+  align-items: flex-start;
+  padding: 10px;
+  
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.content {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 15px;
+}
+
+.right-links, .left-links {
+  /* border: 2px solid red; */
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+/* In case there are other <a> links on the page that I didn't want changed to this
+I wanted to target the <a> tags specifically used in the header and footer */
+.header ul li a, .footer ul li a{
+    text-decoration: none;
+    color: #898989;
+}
+
+/* .buttons {
+  margin: 10px;
+} */
+
+button {
+  /* margin-top: 10px; */
+  padding: 10px;
+}
