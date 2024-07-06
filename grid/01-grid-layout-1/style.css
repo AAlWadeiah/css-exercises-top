@@ -46,3 +46,39 @@ html {
   color: white;
   text-align: left;
 }
+
+/* My solution */
+
+.container {
+  display: inline-grid;
+  --row-size: 100% / 8;
+  --col-size: 100% / 4;
+  /* grid-template: 12.5% 12.5% 62.5% 12.5% / 25% 75%; */
+  grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
+  gap: 15px;
+  grid-template-areas: 
+  "header header"
+  "sidebar nav"
+  "sidebar article"
+  "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
+}
