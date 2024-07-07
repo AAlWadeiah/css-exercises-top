@@ -116,18 +116,15 @@ ul {
   grid-area: header;
   display: grid;
   grid-template-columns: max-content auto;
+  align-items: center;
 }
 
 
 .menu > ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* justify-content: baseline; */
-  /* align-items: stretch; */
-}
-
-.menu > ul > li {
-  align-self: end;
+  grid-template-columns: repeat(4, max-content);
+  gap: 50px;
+  justify-content: end;
 }
 
 .sidebar {
